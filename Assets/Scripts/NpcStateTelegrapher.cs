@@ -3,11 +3,11 @@ using UnityEngine;
 public class NpcStateTelegrapher : MonoBehaviour
 {
     public AudioSource audioSource;
-    public MeshRenderer googleRenderer;
-    public Material patrolGoogleMaterial;
-    public Material attackGoogleMaterial;
-    public Material stunnedGoogleMaterial;
-    public Material searchGoogleMaterial;
+    public MeshRenderer goggleRenderer;
+    public Material patrolGoggleMaterial;
+    public Material attackGoggleMaterial;
+    public Material stunnedGoggleMaterial;
+    public Material searchGoggleMaterial;
 
     public AudioClip[] patrolAudioClips;
     public AudioClip attackAudioClip;
@@ -19,25 +19,25 @@ public class NpcStateTelegrapher : MonoBehaviour
         if (state is PatrolState)
         {
             AudioClip clip = patrolAudioClips[Random.Range(0, patrolAudioClips.Length)];
-            TelegraphState(patrolGoogleMaterial, clip, 0.5f, 4f);
+            TelegraphState(patrolGoggleMaterial, clip, 0.5f, 4f);
         }
         else if (state is AttackState)
         {
-            TelegraphState(attackGoogleMaterial, attackAudioClip);
+            TelegraphState(attackGoggleMaterial, attackAudioClip);
         }
         else if (state is StunnedState)
         {
-            TelegraphState(stunnedGoogleMaterial, stunnedAudioClip, 1f, 1f);
+            TelegraphState(stunnedGoggleMaterial, stunnedAudioClip, 1f, 1f);
         }
         else if (state is SearchState)
         {
-            TelegraphState(searchGoogleMaterial, searchAudioClip);
+            TelegraphState(searchGoggleMaterial, searchAudioClip);
         }
     }
 
     private void TelegraphState(Material material, AudioClip clip)
     {
-        googleRenderer.material = material;
+        goggleRenderer.material = material;
         if (!audioSource.isPlaying)
             audioSource.Stop();
         audioSource.clip = clip;
@@ -46,7 +46,7 @@ public class NpcStateTelegrapher : MonoBehaviour
     
     private void TelegraphState(Material material, AudioClip clip, float minDelay, float maxDelay)
     {
-        googleRenderer.material = material;
+        goggleRenderer.material = material;
         if (!audioSource.isPlaying)
             audioSource.Stop();
         audioSource.clip = clip;

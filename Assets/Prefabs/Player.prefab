@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 1134637592071478232}
   - component: {fileID: 1134637592071478235}
   m_Layer: 0
-  m_Name: Googles
+  m_Name: Goggles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

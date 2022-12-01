@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8810500484850433719}
   - component: {fileID: 1533448172984269203}
   m_Layer: 0
-  m_Name: Googles
+  m_Name: Goggles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,11 +370,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1349983382834380506}
-  googleRenderer: {fileID: 8211466329697502626}
-  patrolGoogleMaterial: {fileID: 2100000, guid: d814a958298fd2e42bf127c6a928963d, type: 2}
-  attackGoogleMaterial: {fileID: 2100000, guid: de06b379596beb64db06775424ed716e, type: 2}
-  stunnedGoogleMaterial: {fileID: 2100000, guid: 64db1d6e547d8724794f067270b990f8, type: 2}
-  searchGoogleMaterial: {fileID: 2100000, guid: 694d355b110287b4e89550c64044724f, type: 2}
+  goggleRenderer: {fileID: 8211466329697502626}
+  patrolGoggleMaterial: {fileID: 2100000, guid: d814a958298fd2e42bf127c6a928963d, type: 2}
+  attackGoggleMaterial: {fileID: 2100000, guid: de06b379596beb64db06775424ed716e, type: 2}
+  stunnedGoggleMaterial: {fileID: 2100000, guid: 64db1d6e547d8724794f067270b990f8, type: 2}
+  searchGoggleMaterial: {fileID: 2100000, guid: 694d355b110287b4e89550c64044724f, type: 2}
   patrolAudioClips:
   - {fileID: 8300000, guid: 17ce18a2e2b33474ba5c3db3ad64e20a, type: 3}
   - {fileID: 8300000, guid: 893669800e8bb8c418fec5a9646b45ef, type: 3}
@@ -397,8 +397,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   lastSeenTargetPosition: {x: 0, y: 0, z: 0}
-  lastSeenTargetTime: 0
-  isStunned: 0
 --- !u!114 &4897469230164105280
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1895,6 +1895,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 5306307470622864533, guid: d583655e95424fc48aa30436d7790609, type: 3}
+      propertyPath: onStateChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306307470622864533, guid: d583655e95424fc48aa30436d7790609, type: 3}
+      propertyPath: onStateChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306307470622864533, guid: d583655e95424fc48aa30436d7790609, type: 3}
+      propertyPath: onStateChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306307470622864533, guid: d583655e95424fc48aa30436d7790609, type: 3}
+      propertyPath: onStateChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NpcStateTelegrapher, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5306307470622864555, guid: d583655e95424fc48aa30436d7790609, type: 3}
       propertyPath: m_IsKinematic
       value: 1
